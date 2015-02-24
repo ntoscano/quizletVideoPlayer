@@ -1,0 +1,17 @@
+<div>
+	<h3>Cards <span class="text-muted">(try clicking)</span></h3>
+	<div class="scroll" id="scroll">
+	   	<div ng-repeat="card in cards | orderBy: 'time'"> 
+   			<div style="cursor:pointer" ng-click="seek(card.time)" ng-class="{'hLight': card.highlight == 1}" class="panel panel-default">
+   				<div class="panel-heading">
+   					<div class="panel-title">
+					<h5>{{card.question}} <span class="text-muted"> ({{card.minTime}})</span></h5>
+					</div>
+				</div>
+				<div class="panel-body">
+				<h6 ng-bind-html="card.answer"></h6>
+				</div>
+			</div>
+	   	</div>
+	</div>
+</div>

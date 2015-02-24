@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en" ng-app="myApp" class="no-js">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Help Me Make Decks</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="app/bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-controller="DeckController">
+	
+<nav id="myNavBar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://membright.com/" target="_blank">Membright</a>
+			<ul class="nav navbar-nav">
+				<li><a  href="index.html" target="_blank"> Video Player</a></li>
+			</ul>
+        </div>
+        </div>
+    </div>
+</nav>	
+	<br>
+	<br>
+	<br>
+	<div class="container">
+		<div class="col-sm-12 col-md-12 col-lg-8">
+			<h1>How to Make a Deck</h1>
+			<p><b>1.</b> Click the Membright link in the navigation bar and sign up for Membright<br>
+			   <b>2.</b> Once you sign in, navigate to the "My Decks" page or click <a href="http://membright.com/app/#/library" target="_blank">this link</a><br>
+			   <b>3.</b> Click "Create a New Deck".<br>
+			   <b>4.</b> Set "Deck Name" to the title of the video.<br>
+			   <b>5.</b> "Deck Image" is optional.<br>
+			   <b>6.</b> Set "Description" to the video description on YouTube.<br>
+			   <b>7.</b> Leave "Source URL" blank for now. I'll go in and set it myself after you create the deck.<br>
+			   <b>8.</b> Click "Save" and continue to make cards.<br>
+			</p>
+			<h1>How to Make Cards</h1>
+			<p> Continuing from step <b>8</b> in "How to Make a Deck":<br>
+			   <b>1.</b> Make sure "Card Type" is set to "Question and Answer".<br>
+			   <b>2.</b> Set "Question" to either a question, or something that indicates the answer, depending on the content.<br>
+					<b>Example:</b><br><br>
+					Question: Where did agriculture develop?<br>
+					Answer:...<br><br>
+				This is a pretty straight forward question-and-answer card, but with something like:<br><br>
+				Question: Advantages/Disadvantages of Agriculture:<br>
+				Answer:...<br><br>
+				The question isn't a "question", but you still have a good idea of what the answer is supposed to be.<br><br>
+			   <b>3.</b> Set "Answer" to the information you want to remember.<br>
+			   <b>4.</b> Click the green "+" button<br>
+			   <b>5.</b> Set "Link 1 Label" to the time of the video where this card is first relevant.<br><br>
+				<b>Example:</b><br>
+				John Green first starts talking about where agriculture developed at time 3:08, so the Link Label should be "3:08"<br><br>
+			   <b>6.</b> Obtain "Link 1 URL" by:<br>Going to the video on YouTube<br>Going to the time set in the "Link Label"<br> Clicking the share tab under the video<br>Clicking the "Start at" box<br>Copying that link.<br>
+			   <b>7.</b> Repeat steps <b>1</b> - <b>6</b> for all the cards you want to make.<br>
+			   <b>8.</b> Email me at Nicolas.Toscano@gmail.com to let me know you made a deck. Please include the name of the deck you made.<br><br><br><br><br>
+
+			</p>
+		</div>
+	</div>
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59776212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
